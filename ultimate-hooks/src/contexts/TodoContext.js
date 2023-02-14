@@ -15,7 +15,6 @@ const TodoContextProvider = ({ children }) => {
         })
     }, [])
 
-    // useEffect
     useEffect(() => {
         dispatch({
             type: SAVE_TODOS,
