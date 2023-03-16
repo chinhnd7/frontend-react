@@ -19,11 +19,13 @@ Nó sẽ lắng nghe sự thay đổi của state, state thay đổi thì expens
 
 ## useCallback()
 
+```
 Component parent: App ----> state (appState)
                       +---> khai báo functionApp
                    ||
                     v
 Component child:  Child nhận props(abc, xyz, functionApp)
+```
 
 Khi state appState của App thay đổi, ta không muốn render lại thằng Child. Tuy nhiên khi state thay đổi, các function trong App được khai báo lại. Dẫn đến props của Child nhận vào cũng thay đổi.
 
